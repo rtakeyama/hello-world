@@ -1,0 +1,35 @@
+<html>
+<head>
+<style type="text/css">
+ul,li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+</style>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/infiniteslide.js"></script>
+<script type="text/javascript" src="scripts/jquery.pause.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('#main_slide').infiniteslide({
+        'height': 800,
+        'speed': 10,
+        'direction' : 'left',
+        'pauseonhover': false
+    });
+});
+</script>
+</head>
+<body>
+<!--<div class="infiniteslide1">-->
+<div id="main_slide">
+    <ul>
+        <li><img src="img/1.jpg" height="90%" alt="" /></li>
+        <li><img src="img/2.jpg" height="90%" alt="" /></li>
+        <li><img src="img/3.jpg" height="90%" alt="" /></li>
+        <li><img src="img/4.jpg" height="90%" alt="" /></li>
+    </ul>
+</div>
+</body>
+</html>
